@@ -88,7 +88,7 @@ Il seguente esercizio è utile per:
      - cognome
      - età
      - città
-     - passatempo
+     - hobby
      - cibo preferito
      - Videogioco preferito
      - Film preferito
