@@ -76,7 +76,8 @@ Il seguente esercizio è utile per:
 
 1. **Uno studente deve creare un nuovo repository su github e impostare gli altri come collaboratori.**
     
-     Dal main crea un ramo chiamato "development" e un file chiamato "team.js" che verrà inviato al nuovo ramo (development). 
+     Dal main crea un ramo chiamato "development" e un file chiamato "team.js" che verrà inviato al nuovo ramo 
+     (development). 
      Il file team.js deve essere inizializzato con una variabile che abbia come valore un array vuoto.
     
 2. **Ogni studente deve clonare il repository e creare il proprio ramo locale.**
@@ -92,29 +93,29 @@ Il seguente esercizio è utile per:
      - Videogioco preferito
      - Film preferito
      - libro preferito
-     - nome del cucciolo
+     - nome animale domestico
     
      **E inserisci il codice.**
     
      Se qualcuno vuole lasciare le informazioni vuote, usa la stringa vuota: ''.
     
 3. **Tutti i rami devono confluire nello sviluppo seguendo la procedura del flusso git:**
-     - Spinta di sviluppo
-     - Fusione locale dello sviluppo nella propria filiale
+     - Pull in development
+     - Merge locale dello development nel proprio branch
      - Risoluzione dei conflitti (se necessario)
-     - Richiesta pull allo sviluppo
+     - pull request a development
     
      Dopo che tutti i membri hanno unito il proprio codice allo sviluppo, ottengono una serie di oggetti.
     
      Si consiglia vivamente di eseguire l'operazione di unione insieme in una riunione.
     
 4. **Ora il team deve scrivere alcune funzioni per svolgere diversi compiti:**
-     - Stampare la squadra in ordine alfabetico (cognome nome).
-     - Stampa la squadra in ordine di età (nome età).
-     - Stampa la squadra di mezza età.
-     - Stampa chi ha un animale domestico (nome petName).
-     - Stampa chi ha scritto "LOL" o "League Of Legends" come videogioco preferito. (nome).
-     - Stampa se ci sono membri con lo stesso nome (nome).
+     - Stampare la squadra in ordine alfabetico (cognome nome).                                 GIUSP
+     - Stampa la squadra in ordine di età (nome età).                                           GIOELE
+     - Stampa la squadra di mezza età.                                                          EMANUELE
+     - Stampa chi ha un animale domestico (nome petName).                                       LUCA
+     - Stampa chi ha scritto "LOL" o "League Of Legends" come videogioco preferito. (nome).     FRANCESCO
+     - Stampa se ci sono membri con lo stesso nome (nome).                                      GIUSP
     
      **Ogni membro svolge un compito.**
     
