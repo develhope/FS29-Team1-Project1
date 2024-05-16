@@ -6,7 +6,7 @@ const teams = [
     city: "Roma",
     hobby: "Fumetti",
     favoriteFood: "Purè di patate",
-    favoriteVideogame: "Final Fantasy",
+    favoriteVideogame: "Final Fantasy IX",
     favoriteFilm: "Batman",
     favoriteBook: "Persy Jackson",
     petName: "Luna, beagle",
