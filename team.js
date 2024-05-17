@@ -61,6 +61,8 @@ const teams = [
   },
 ];
 
+
+
 function calculateTeamAge(teams) {
   let sum = teams.reduce((a, person) => a + person.age, 0);
   let avg = sum / teams.length;
@@ -68,3 +70,23 @@ function calculateTeamAge(teams) {
 }
 const averageAge = calculateTeamAge(teams);
 console.log(Math.round(averageAge));
+
+function animalPet (teams) {
+    const x = teams.forEach(team => {
+        if (team.petName) {
+            console.log(team.name + ', ' + team.petName)
+            
+        }
+        else {
+            console.log("Non ha un animale")
+        }
+    }
+
+    )
+    
+    
+    
+
+}
+
+animalPet(teams)
