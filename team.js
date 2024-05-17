@@ -23,7 +23,6 @@ const teams = [
     favoriteBook: "The Metamorphosis",
     petName: "Loki",
   },
-
   {
     name: "Emanuele",
     surname: "Vutera",
@@ -36,7 +35,6 @@ const teams = [
     favoriteBook: "",
     petName: "",
   },
-
   {
     name: "Luca",
     surname: "Potenza",
@@ -49,7 +47,6 @@ const teams = [
     favoriteBook: "Tex",
     petName: "Totò & Sammy",
   },
-
   {
     name: "Gioele",
     surname: "Brunori",
