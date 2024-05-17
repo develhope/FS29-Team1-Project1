@@ -6,7 +6,7 @@ const teams = [
     city: "Roma",
     hobby: "Fumetti",
     favoriteFood: "Purè di patate",
-    favoriteVideogame: "Final Fantasy IX",
+    favoriteVideoGame: "Final Fantasy IX",
     favoriteFilm: "Batman",
     favoriteBook: "Persy Jackson",
     petName: "Luna, beagle",
@@ -60,3 +60,26 @@ const teams = [
     petName: "Randal",
   },
 ];
+function alphabeticalOrder(arr) {
+  const arrCopy = arr.map((person) => person);
+  arrCopy.sort((person1, person2) => {
+    const nameA = person1.surname.toUpperCase();
+    const nameB = person2.surname.toUpperCase();
+    if (nameA < nameB) {
+      return -1;
+    }
+    if (nameA > nameB) {
+      return 1;
+    }
+
+    return 0;
+  });
+  console.log("Il team in ordine alfabetico:");
+  arrCopy.forEach((person) =>
+    console.log(`${person.surname} - ${person.name}`)
+  );
+}
+function sameName(arr) {}
+
+alphabeticalOrder(teams);
+sameName(teams);
