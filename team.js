@@ -61,6 +61,7 @@ const teams = [
   },
 ];
 
+<<<<<<< HEAD
 function playerWhoPlayOnLol(teams) {
   const whoPlay = teams.filter(
     (player) =>
@@ -73,3 +74,12 @@ function playerWhoPlayOnLol(teams) {
 }
 
 playerWhoPlayOnLol(teams);
+=======
+function calculateTeamAge(teams) {
+  let sum = teams.reduce((a, person) => a + person.age, 0);
+  let avg = sum / teams.length;
+  return avg;
+}
+const averageAge = calculateTeamAge(teams);
+console.log(Math.round(averageAge));
+>>>>>>> development
