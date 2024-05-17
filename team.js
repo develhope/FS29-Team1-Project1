@@ -1,5 +1,17 @@
 const teams = [
   {
+    name: "Giuseppe",
+    surname: "Incurvati",
+    age: 30,
+    city: "Roma",
+    hobby: "Fumetti",
+    favoriteFood: "Purè di patate",
+    favoriteVideogame: "Final Fantasy IX",
+    favoriteFilm: "Batman",
+    favoriteBook: "Persy Jackson",
+    petName: "Luna, beagle",
+  },
+  {
     name: "Francesco",
     surname: "Simeone",
     age: 34,
@@ -11,7 +23,6 @@ const teams = [
     favoriteBook: "The Metamorphosis",
     petName: "Loki",
   },
-
   {
     name: "Emanuele",
     surname: "Vutera",
@@ -24,7 +35,6 @@ const teams = [
     favoriteBook: "",
     petName: "",
   },
-
   {
     name: "Luca",
     surname: "Potenza",
@@ -37,7 +47,6 @@ const teams = [
     favoriteBook: "Tex",
     petName: "Totò & Sammy",
   },
-
   {
     name: "Gioele",
     surname: "Brunori",
