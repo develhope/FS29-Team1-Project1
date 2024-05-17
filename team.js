@@ -60,3 +60,11 @@ const teams = [
     petName: "Randal",
   },
 ];
+
+function calculateTeamAge(teams) {
+  let sum = teams.reduce((a, person) => a + person.age, 0);
+  let avg = sum / teams.length;
+  return avg;
+}
+const averageAge = calculateTeamAge(teams);
+console.log(Math.round(averageAge));
