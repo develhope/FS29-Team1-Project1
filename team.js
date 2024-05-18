@@ -12,7 +12,7 @@ const teams = [
     petName: "Luna, beagle",
   },
   {
-    name: "Francesco",
+    name: "luca",
     surname: "Simeone",
     age: 34,
     city: "Latiano",
@@ -24,7 +24,7 @@ const teams = [
     petName: "Loki",
   },
   {
-    name: "Emanuele",
+    name: "gioele",
     surname: "Vutera",
     age: 27,
     city: "Perugia",
@@ -75,11 +75,32 @@ function alphabeticalOrder(arr) {
     return 0;
   });
   console.log("Il team in ordine alfabetico:");
-  arrCopy.forEach((person) =>
-    console.log(`${person.surname} - ${person.name}`)
-  );
+  arrCopy.forEach((person) => console.log(`${person.surname} ${person.name}`));
 }
-function sameName(arr) {}
+function sameName(arr) {
+  const contaNomi = {};
+
+  // Trova il nome dei membri
+  arr.forEach((person) => {
+    contaNomi[person.name.toLowerCase()] =
+      (contaNomi[person.name.toLowerCase()] || 0) + 1;
+  });
+
+  // Trova i nomi uguali
+  const nomiDoppi = [];
+  for (const name in contaNomi) {
+    if (contaNomi[name] > 1) {
+      nomiDoppi[nomiDoppi.length] = name;
+    }
+  }
+
+  // Stampa i nomi uguali se ci sono, altrimenti stampa messagio di assenza nomi uguali
+  if (nomiDoppi.length > 0) {
+    console.log("Ci sono due o più membri con il nome:", nomiDoppi.join(", "));
+  } else {
+    console.log("Non ci sono membri con nomi uguali.");
+  }
+}
 
 alphabeticalOrder(teams);
 sameName(teams);
