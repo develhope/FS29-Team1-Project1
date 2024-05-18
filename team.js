@@ -12,7 +12,7 @@ const teams = [
     petName: "Luna, beagle",
   },
   {
-    name: "luca",
+    name: "Francesco",
     surname: "Simeone",
     age: 34,
     city: "Latiano",
@@ -24,7 +24,7 @@ const teams = [
     petName: "Loki",
   },
   {
-    name: "gioele",
+    name: "Emanuele",
     surname: "Vutera",
     age: 27,
     city: "Perugia",
@@ -60,6 +60,7 @@ const teams = [
     petName: "Randal",
   },
 ];
+
 function alphabeticalOrder(arr) {
   const arrCopy = arr.map((person) => person);
   arrCopy.sort((person1, person2) => {
@@ -77,24 +78,54 @@ function alphabeticalOrder(arr) {
   console.log("Il team in ordine alfabetico:");
   arrCopy.forEach((person) => console.log(`${person.surname} ${person.name}`));
 }
+
+function ageOrder(teams) {
+  const arr = teams.map((person) => person);
+  arr.sort((person1, person2) => person1.age - person2.age);
+  console.log("L'età di ognuno:");
+  arr.forEach((person) => console.log(`${person.name} ha ${person.age}`));
+}
+
+function calculateTeamAge(teams) {
+  let sum = teams.reduce((a, person) => a + person.age, 0);
+  let avg = sum / teams.length;
+  console.log(`L'età media è ${Math.round(avg)}`);
+}
+
+function animalPet(teams) {
+  console.log("Membri del team che hanno un animale e il suo nome");
+  const x = teams.forEach((team) => {
+    if (team.petName) {
+      console.log("L'animale di " + team.name + " si chiama " + team.petName);
+    } else {
+      console.log(`${team.name} non ha un animale`);
+    }
+  });
+}
+
+function playerWhoPlayOnLol(teams) {
+  const whoPlay = teams.filter(
+    (player) =>
+      player.favoriteVideoGame.toLowerCase() === "league of legends" ||
+      player.favoriteVideoGame.toLowerCase() === "lol"
+  );
+  return whoPlay.forEach((element) => {
+    console.log(`Lo studente che gioca a lol è: ${element.name}`);
+  });
+}
+
 function sameName(arr) {
   const contaNomi = {};
-
-  // Trova il nome dei membri
+  const nomiDoppi = [];
   arr.forEach((person) => {
     contaNomi[person.name.toLowerCase()] =
       (contaNomi[person.name.toLowerCase()] || 0) + 1;
   });
-
-  // Trova i nomi uguali
-  const nomiDoppi = [];
   for (const name in contaNomi) {
     if (contaNomi[name] > 1) {
       nomiDoppi[nomiDoppi.length] = name;
     }
   }
-
-  // Stampa i nomi uguali se ci sono, altrimenti stampa messagio di assenza nomi uguali
   if (nomiDoppi.length > 0) {
     console.log("Ci sono due o più membri con il nome:", nomiDoppi.join(", "));
   } else {
@@ -103,4 +134,8 @@ function sameName(arr) {
 }
 
 alphabeticalOrder(teams);
+ageOrder(teams);
+calculateTeamAge(teams);
+animalPet(teams);
+playerWhoPlayOnLol(teams);
 sameName(teams);
