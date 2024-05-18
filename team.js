@@ -60,9 +60,20 @@ const teams = [
     petName: "Randal",
   },
 ];
+//Francesco
+function playerWhoPlayOnLol(teams) {
+  const whoPlay = teams.filter(
+    (player) =>
+      player.favoriteVideoGame.toLowerCase() === "league of legends" ||
+      player.favoriteVideoGame.toLowerCase() === "lol"
+  );
+  return whoPlay.forEach((element) => {
+    console.log(`lo studente che gioca a lol è: ${element.name}`);
+  });
+}
 
-
-
+playerWhoPlayOnLol(teams);
+//Emanuele
 function calculateTeamAge(teams) {
   let sum = teams.reduce((a, person) => a + person.age, 0);
   let avg = sum / teams.length;
@@ -71,6 +82,8 @@ function calculateTeamAge(teams) {
 const averageAge = calculateTeamAge(teams);
 console.log(Math.round(averageAge));
 
+
+//Luca
 function animalPet (teams) {
     const x = teams.forEach(team => {
         if (team.petName) {
@@ -83,10 +96,8 @@ function animalPet (teams) {
     }
 
     )
-    
-    
-    
 
 }
 
 animalPet(teams)
+
